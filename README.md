@@ -18,6 +18,7 @@
 - Ferrone, Harrison (2019) Learning C# by Developing Games with Unity 2019, 4th Ed., Packt Publishing
 - Buckland, Mat (2005) Programming Game AI by Example, Worldware Publishing Inc
 
+#### Yes I do, Hentai too. hehe
 
 # Week 3
 
