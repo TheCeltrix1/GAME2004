@@ -17,6 +17,7 @@ namespace GRIDCITY
         private MeshFilter myMeshFilter;
         private Mesh myMesh;
         private Material myMaterial;
+        public Vector3 pos;
         #endregion
 
         #region Properties	
@@ -63,7 +64,7 @@ namespace GRIDCITY
             myMeshFilter.mesh = myMesh;
             myRenderer.material = myMaterial;
 
-            if (recursionLevel < maxLevel)
+            if (recursionLevel < maxLevel && !CityManager.occupiedBuilding[(int)pos.x,(int)pos.y+1,(int)pos.z])
             {
                 if (recursionLevel == maxLevel-1)
                 {
@@ -79,6 +80,7 @@ namespace GRIDCITY
                     int matNum = myProfile.mainMaterials.Length;
                     child.GetComponent<DeluxeTowerBlock>().Initialize(recursionLevel + 1, myProfile.mainMaterials[Random.Range(0, matNum)], myProfile.mainBlocks[Random.Range(0, meshNum)]);
                 }
+                CityManager.occupiedBuilding[(int)pos.x, (int)pos.y, (int)pos.z] = true;
             }
         }
 

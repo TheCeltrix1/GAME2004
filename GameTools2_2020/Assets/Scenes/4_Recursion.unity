@@ -515,6 +515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff2ef46098832f41b22f68401eab01a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  size: 24
   meshArray:
   - {fileID: 1846653201744175015, guid: 47da2b13d010b4a42909ec2b7d124826, type: 3}
   - {fileID: 3673722810935237965, guid: 22d6d4b4b19385b47a24337c40596759, type: 3}
